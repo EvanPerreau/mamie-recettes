@@ -1,0 +1,17 @@
+{
+  "name": "mamie-recettes",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"npx pnpm --filter frontend dev\" \"npx pnpm --filter backend dev\"",
+    "lint": "concurrently \"npx pnpm --filter frontend lint --fix\" \"npx pnpm --filter backend lint --fix\"",
+    "format": "concurrently \"npx pnpm --filter frontend format\" \"npx pnpm --filter backend format\"",
+    "test": "concurrently \"npx pnpm --filter backend test\""
+  },
+  "keywords": [],
+  "author": "EvanPerreau",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

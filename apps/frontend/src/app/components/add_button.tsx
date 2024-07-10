@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function AddButton() {
   return (
-    <Link
-      href="/creation"
-      className="btn btn-square btn-outline fixed bottom-2 right-2"
-    >
-      <Icon icon="fa-solid:plus" height="100%" />
+    <Link href="/creation" className="fixed bottom-2 right-2 bg-accent rounded">
+      <Icon
+        icon="fa-solid:plus"
+        className="h-12 w-12 hover:h-16 hover:w-16 text-white p-2"
+      />
     </Link>
   );
 }

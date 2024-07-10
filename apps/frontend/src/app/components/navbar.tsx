@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-transparent align-top sticky top-0">
+    <div className="navbar backdrop-blur-sm align-top sticky top-0">
       <div className="navbar-start">
         <Link
           href="/"

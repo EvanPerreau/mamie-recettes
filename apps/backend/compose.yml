@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: mamie-recipes_dev
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: pass4dev
+    ports:
+      - "7000:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/mamie-recipe
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+
+
+volumes:
+  dbdata:
